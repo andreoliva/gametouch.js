@@ -12,6 +12,7 @@
 	border-radius: 100%;
 	text-align: center;
 	font-family: Arial, sans-serif;
+	font-weight: bold;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 }
@@ -64,6 +65,56 @@
 	-ms-transform-origin: center;
 	-o-transform-origin: center;
 	transform-origin: center;
+}
+
+.gamepad-analog-arrows { position: absolute; }
+.gamepad-analog-up { top: 25px; left: 69%;}
+.gamepad-analog-up:before {
+	content: "";
+	position: absolute;
+	right: 0px;
+	bottom: 99.9%;
+	width: 0;
+	height: 0;
+	border-left: 28px solid transparent;
+	border-bottom: 25px solid #000;
+	border-right: 28px solid transparent;
+}
+.gamepad-analog-down { bottom: 25px; right: 69%; }
+.gamepad-analog-down:before {
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 99.9%;
+	width: 0;
+	height: 0;
+	border-left: 28px solid transparent;
+	border-top: 25px solid #000;
+	border-right: 28px solid transparent;
+}
+.gamepad-analog-left { top: 33%; left: 25px; }
+.gamepad-analog-left:before {
+	content: "";
+	position: absolute;
+	right: 99.9%;
+	top: 0px;
+	width: 0;
+	height: 0;
+	border-top: 28px solid transparent;
+	border-right: 25px solid #000;
+	border-bottom: 28px solid transparent;
+}
+.gamepad-analog-right { top: 33%; right: 25px; }
+.gamepad-analog-right:before {
+	content: "";
+	position: absolute;
+	left: 99.9%;
+	top: 0px;
+	width: 0;
+	height: 0;
+	border-top: 28px solid transparent;
+	border-left: 25px solid #000;
+	border-bottom: 28px solid transparent;
 }
 
 /*--------------------------------DIRECTIONAL---------------------------------*/
